@@ -1,11 +1,9 @@
 // Core variables and mixins
 @import "variables.less";
 @import "mixins.less";
-
 // Reset
 @import "normalize.less";
 @import "print.less";
-
 // Core CSS
 @import "scaffolding.less";
 @import "type.less";
@@ -14,7 +12,6 @@
 @import "tables.less";
 @import "forms.less";
 @import "buttons.less";
-
 // Components
 @import "component-animations.less";
 @import "glyphicons.less";
@@ -37,13 +34,11 @@
 @import "panels.less";
 @import "wells.less";
 @import "close.less";
-
 // Components w/ JavaScript
 @import "modals.less";
 @import "tooltip.less";
 @import "popovers.less";
 @import "carousel.less";
-
 // Utility classes
 @import "utilities.less";
 @import "responsive-utilities.less";
@@ -51,6 +46,20 @@
 body {
   padding-top: 50px;
 }
+
 .show-grid {
-margin-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+#drop-files {
+  width: 285px;
+  height: 185px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 4px dashed rgba(0, 0, 0, 0.2);
+  padding: 70px 0 0 0;
+  text-align: center;
+  font-size: 2em;
+  float: left;
+  margin: 0;
 }
