@@ -6624,6 +6624,9 @@ td.visible-print {
 body {
   padding-top: 50px;
 }
+.navbar-collapse {
+  padding: 0;
+}
 .show-grid {
   margin-bottom: 15px;
 }
