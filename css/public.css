@@ -6684,6 +6684,19 @@ img {
   float: left;
   margin: 0;
 }
+.photo-detail {
+  width: 520px;
+}
+.btn-participation-col {
+  width: 260px;
+  margin-bottom: 8px;
+}
+.block-col {
+  margin-bottom: 8px;
+}
+.map-detail {
+  width: 250px;
+}
 /*
  * Social Buttons for Bootstrap
  *
