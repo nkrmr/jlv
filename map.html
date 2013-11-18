@@ -29,10 +29,10 @@
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">LOGO JAIME LE VOYAGE</a>
+            <a class="navbar-brand" href="/">JAIME LE VOYAGE</a>
         </div>
         <div class="navbar-right">
-            <a class="navbar-brand pull-right" href="#">Organisé par LOGO ACCORHOTELS.COM</a>
+            <span class="navbar-brand">Organisé par <a class="pull-right" href="http://www.accorhotels.com/fr/france/index.shtml" target="_blank">&nbsp;ACCORHOTELS.COM</a></span>
         </div>
         <!--/.nav-collapse -->
     </div>
@@ -58,10 +58,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="/list.html">Coup de coeur</a></li>
+                    <li><a href="/list.html">Coup de coeur</a></li>
                     <li><a href="/list.html">Les plus récentes</a></li>
                     <li><a href="/list.html">Les plus votées</a></li>
-                    <li><a href="/map.html">Carte</Ca></a></li>
+                    <li class="active"><a href="/map.html">Carte</Ca></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/index.html">Concours</a></li>
@@ -72,69 +72,28 @@
             </div>
             <!-- /.navbar-collapse -->
         </nav>
-        <h2>Partagez votre plus belle phto de voyage !</h2>
-        <form class="form-horizontal">
-            <div class="row show-grid">
-                <div class="col-md-16">
 
-                    <div class="form-group">
-                        <label for="inputFile" class="col-sm-10 control-label">Téléchargez votre photo</label>
-                        <div class="col-sm-14">
-                            <input type="file" class="form-control" id="inputFile" placeholder="Adresse">
-                            <br>ou<br>
-                            <div id="drop-files">
-                                Deposez votre photo ici
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <img data-src="/js/holder.js/250x250">
-                </div>
+        <div class="row show-grid">
+            <div class="col-md-24">
+                <a href="/photo.html" class="thumbnail">
+                    <img src="/img/map.png">
+                </a>
             </div>
-            <div class="row show-grid">
-                <div class="col-md-16">
+        </div>
 
-
-                    <div class="form-group">
-                        <label for="inputAddress" class="col-sm-10 control-label">Localisez votre photo</label>
-
-                        <div class="col-sm-14">
-                            <input type="text" class="form-control" id="inputAddress" placeholder="Adresse">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputTitle" class="col-sm-10 control-label">Titre (max. 40 charactères)
-                            J'aime</label>
-
-                        <div class="col-sm-14">
-                            <input type="text" class="form-control" id="inputTitle" placeholder="Titre">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputDescription" class="col-sm-10 control-label">Description (max. 140
-                            charactères)</label>
-
-                        <div class="col-sm-14">
-                            <textarea class="form-control" id="inputDescription" rows="3"
-                                      placeholder="Description"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-10 col-sm-14">
-                            <button type="submit" class="btn btn-primary pull-right">Valider ma participation</button>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="col-md-8">
-                    <img data-src="/js/holder.js/250x250">
-                </div>
-            </div>
-
-        </form>
+        <div class="text-center">
+            <ul class="pagination pagination-lg">
+              <li><a href="#">&laquo;</a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">&raquo;</a></li>
+            </ul>
+        </div>
     </div>
+
 
 </div>
 <!-- /.container -->
