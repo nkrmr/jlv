@@ -3720,8 +3720,9 @@ input[type="button"].btn-block {
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 100%;
   font-weight: bold;
+  margin: 10px 0;
 }
 .btn-group > .btn + .dropdown-toggle {
   padding-left: 8px;
@@ -6708,30 +6709,51 @@ footer .navbar-accor a {
   }
 }
 .container .jumbotron {
-  padding: 20px;
-  margin: 0;
+  padding: 20px 20px 20px 20px;
+  margin: 0 0 10px 0;
   font-size: 125%;
 }
 .container .jumbotron ul {
+  background: none repeat scroll 0 0 #FFFFFF;
+  font-size: 90%;
+  line-height: 20px;
   list-style-type: none;
+  margin: 0 0 10px;
+  padding: 10px 12px;
   text-align: left;
-  font-size: 100%;
-  margin: 0 0 20px 0;
-  padding: 0;
-  line-height: 18px;
+  border-radius: 4px;
+}
+.container .jumbotron ul.prize {
+  background: none repeat scroll 0 0 #998B84;
+  color: #fff;
 }
 .container .jumbotron ul li {
   margin: 0;
   padding: 0;
   font-size: 80%;
 }
-.btn-lg {
-  font-size: 16px;
-  font-weight: bold;
+.container .jumbotron ul li p {
+  margin: 0;
+  padding: 0;
+  font-size: 110%;
 }
 .prize_amount {
   color: #0f2f7e;
-  font-size: 150%;
+  font-size: 175%;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+.btn-lg {
+  font-size: 100%;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.container .jumbotron .input-group {
+  font-size: 70%;
+  font-family: arial;
+  padding: 6px 0;
+  color: #555555;
+  line-height: 15px;
 }
 .show-grid {
   margin-bottom: 12px;
