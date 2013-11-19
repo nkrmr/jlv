@@ -43,13 +43,37 @@ img {
      width: 248px;
     text-indent: -9999px;
 }
-.navbar-accor span {
+footer .navbar-accor a{
+    background: url("../img/logo-ah-blue.gif") no-repeat scroll right -11px rgba(0, 0, 0, 0);
+}
+footer .navbar-accor a.bandyou{
+    background: url("../img/logo-bandyou.png") no-repeat scroll right -11px rgba(0, 0, 0, 0);
+    width: 148px;
+}
+footer .navbar-accor a.photobox{
+    background: url("../img/logo-photobox.png") no-repeat scroll right -11px rgba(0, 0, 0, 0);
+    width: 148px;
+}
+
+
+//temp
+footer .navbar-accor a{
+    text-indent: 0;
+    padding: 20px;
+}
+//
+
+.navbar-accor span{
     display: block;
     font-size: 14px;
         float: left;
         line-height: 20px;
         padding: 19px 0 0;
 
+}
+
+.navbar-collapse .navbar-nav.navbar-right:last-child {
+    margin-right: 0px;
 }
 // Footer
 // -------------------------
@@ -88,22 +112,44 @@ img {
 
 
 .container .jumbotron {
-    padding: 30px;
+    padding: 20px;
     margin: 0;
+    font-size: 125%;
+}
+.container .jumbotron ul{
+    list-style-type: none;
+    text-align: left;
+    font-size: 100%;
+    margin: 0 0 20px 0;
+    padding: 0;
+    line-height: 18px;
+}
+.container .jumbotron ul li{
+    margin: 0;
+    padding: 0;
+    font-size: 80%;
 }
 .btn-lg {
     font-size: 16px;
     font-weight: bold;
 }
 
+.prize_amount{
+    color:@brand-primary;
+    font-size: 150%;
+
+}
 // Grid
 // -------------------------
 
 
 .show-grid {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
-
+.col-md-12 {
+    width: 50%;
+    margin-bottom: 15px;
+}
 
 // form
 // -------------------------
@@ -120,3 +166,124 @@ img {
   margin: 0;
 }
 
+.photo-detail {
+  width: 520px;
+}
+
+.btn-participation-col {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.block-col {
+  margin-bottom: 10px;
+}
+
+.map-detail{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.item {
+    position: relative;
+
+}
+
+
+.item .item-infos {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    display: none;
+    height: 65px;
+    left: 10px;
+    right: 10px;
+    padding: 10px 0 10px 10px;
+    position: absolute;
+}
+.item:hover .item-infos {
+    display: block;
+}
+.item .item-infos span {
+    color: #FFFFFF;
+    display: block;
+}
+.item-infos span.item-infos-title, .item-infos span.item-date {
+    color: #FFFFFF;
+    float: left;
+    font-size: 11px;
+    height: 25px;
+    margin: 0;
+    padding: 5px 0 0 5px;
+    width: 235px;
+}
+.item-infos span.item-infos-title {
+    background: url("../img/jlv_ico.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
+    font-size: 15px;
+    padding: 5px 0 0 35px;
+    width: 235px;
+}
+
+.item-infos span.item-infos-count {
+    float: right;
+    margin: 0;
+}
+
+.item-infos span.item-infos-count span.count-votes {
+    color: #FFFFFF;
+    float: left;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    margin: 0 0 0 10px;
+    padding: 5px 0 0;
+    text-align: center;
+    width: 30px;
+}
+.item-infos span.item-infos-count span.count-votes {
+    font-size: 11px;
+    letter-spacing: -0.05em;
+}
+
+.item-infos span.item-infos-count span.count-votes {
+    background: url("../img/jlv_ico_vote.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #990066;
+    float: right;
+    margin: 0 10px 0 0;
+}
+span.item-infosData {
+    float: left;
+    margin: 10px 5px;
+    width: 300px;
+}
