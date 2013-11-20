@@ -6681,16 +6681,8 @@ footer .navbar-accor a {
 .navbar-collapse .navbar-nav.navbar-right:last-child {
   margin-right: 0px;
 }
-.nav .divider {
-  height: 40px;
-  width: 1px;
-  margin: 0 5px;
-  overflow: hidden;
-  background-color: #222;
-  border-right: 1px solid #444;
-}
-.divider {
-  height: 40px;
+.nav .divider-vertical {
+  height: 50px;
   width: 1px;
   margin: 0 5px;
   overflow: hidden;
@@ -6881,6 +6873,9 @@ span.item-infosData {
   float: left;
   margin: 10px 5px;
   width: 300px;
+}
+.bs-docs-grid .col-md-12 {
+  background: #CCC;
 }
 /*
  * Social Buttons for Bootstrap
