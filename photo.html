@@ -16,6 +16,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="/css/public.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]>
@@ -29,6 +30,14 @@
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1&appId=198063146575";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <header class="navbar navbar-inverse navbar-fixed-top accor-navbar" role="navigation">
     <div class="container">
@@ -46,55 +55,104 @@
     <br>
 
     <div class="bs-docs-grid">
-        <nav class="navbar navbar-default" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
+        <nav class="navbar navbar-default navbar-inverse" role="navigation">
+                   <!-- Brand and toggle get grouped for better mobile display -->
+                   <div class="navbar-header">
+                       <button type="button" class="navbar-toggle" data-toggle="collapse"
+                               data-target="#bs-example-navbar-collapse-1">
+                           <span class="sr-only">Toggle navigation</span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                       </button>
+                   </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Coup de coeur</a></li>
-                    <li><a href="#">Les plus récentes</a></li>
-                    <li><a href="#">Les plus votées</a></li>
-                    <li><a href="#">Carte</Ca></a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Concours</a></li>
-                    <li><a href="#">Réglement</a></li>
-                    <li><a href="#">Jury</a></li>
-                    <li><a href="#">Prix</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </nav>
+                   <!-- Collect the nav links, forms, and other content for toggling -->
+                   <div class="collapse navbar-collapse" id="">
+                       <ul class="nav navbar-nav">
+                           <li><a href="/"><span class="glyphicon glyphicon-home"> </span></a></li>
+                           <li class="divider-vertical"></li>
+                           <li><a href="/list.html"><span class="glyphicon glyphicon-heart"> </span> Coup de coeur</a></li>
+                           <li><a href="/list.html"><span class="glyphicon glyphicon-th-large"> </span> Les plus récentes</a></li>
+                           <li><a href="/list.html"><span class="glyphicon glyphicon-thumbs-up"> </span> Les plus votées</a></li>
+                           <li><a href="/map.html"><span class="glyphicon glyphicon-map-marker"> </span> Carte</Ca></a></li>
+                       </ul>
+
+                       <ul class="nav navbar-nav navbar-right">
+                           <li class="divider-vertical"></li>
+                             <li class="dropdown">
+                               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-info-sign"></span> Le concours <b class="caret"></b></a>
+                               <ul class="dropdown-menu">
+                                   <li class="active"><a href="/rules.html"><span class="glyphicon glyphicon-list"></span> Réglement</a></li>
+                                   <li class="divider"></li>
+                                   <li><a href="/jury.html"><span class="glyphicon glyphicon-user"></span> Jury</a></li>
+                                   <li class="divider"></li>
+                                   <li><a href="/prize.html"><span class="glyphicon glyphicon-gift"></span> Prix</a></li>
+                               </ul>
+                             </li>
+                           </ul>
+                   </div>
+                   <!-- /.navbar-collapse -->
+               </nav>
         <ul class="pager">
               <li class="previous"><a href="#">&larr; Photo précédente</a></li>
               <li class="next"><a href="#">Photo suivante &rarr;</a></li>
-            </ul>
+        </ul>
         <div class="row show-grid">
-            <div class="col-md-16">
-                <img src="/img/photo/img4.jpg" class="photo-detail">
+            <div class="col-md-16 item-large">
+                <img src="http://static.beglob.com/user/1004376/photo/1004376_514f2d314486a.jpg" class="photo-detail">
+                <!--<img src="/img/user-detail.png">-->
+
+                <div class="item-infos block-col">
+                        <span class="item-infos-title">être sur la route.</span>
+
+                        <span class="item-infos-desc">
+                            <img src="/img/jlv_startquote.png">
+                                NY jusque LA dans un van. C'est la fin de notre aventure, nous voila sur la côte Ouest, à Salvation mountain les étoiles dansent pour nous.
+                            <img src="/img/jlv_endquote.png">
+                        </span>
+
+                        <span class="item-date">Ajouté le 25/03/2013 par Kévin Galop</span>
+                        <span class="item-infos-count">
+                             <span class="count-votes">16</span>
+                        </span>
+                        <div id="vote-button" class="text-center">
+                             <a id="post-vote" class="btn btn-jlv btn-lg"  href="javascript:void(0)">J'<span class="glyphicon glyphicon-heart"></span>, je vote !</a>
+                             <input type="hidden" value="" id="part-id" name="part-id">
+                        </div>
+                </div>
+                <div class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a>
+
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+                <g:plusone></g:plusone>
+                <div class="item-user block-col">
+                    <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object" data-src="/js/holder.js/64x64">
+                      </a>
+                      <div class="media-body">
+                        <h4 class="media-heading">Kevin Galop</h4>
+                          <span class="social-buttons">
+                          <a class="btn btn-social-icon btn-xs btn-facebook" href="#"><i class="fa fa-facebook"></i></a>
+                          <a class="btn btn-social-icon btn-xs btn-twitter" href="#"><i class="fa fa-twitter"></i></a>
+                          <a class="btn btn-social-icon btn-xs btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a>
+                          <a class="btn btn-social-icon btn-xs btn-flickr" href="#"><i class="fa fa-flickr"></i></a>
+                          <a class="btn btn-social-icon btn-xs btn-pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+                          </span>
+                      </div>
+                    </div>
+
+                </div>
+
             </div>
             <div class="col-md-8">
-                <a href="participation.html" class="btn btn-primary pull-right btn-participation-col">Editer ma participation</a>
-                <img data-src="/js/holder.js/260x200" class="block-col">
-                <img data-src="/js/holder.js/260x260">
-            </div>
-        </div>
-        <div class="row show-grid">
-            <div class="col-md-16">
-                <img src="/img/user-detail.png">
-            </div>
-            <div class="col-md-8">
-                <img class="map-detail" alt="photoLabel" src="http://maps.google.com/maps/api/staticmap?markers=size:normal|color:0x990066|33.0160999,9.1013498&amp;zoom=3&amp;maptype=terrain&amp;sensor=false&amp;size=230x140">
+                <a href="participation.html" class="btn btn-primary pull-right btn-participation-col"><span class="glyphicon glyphicon-edit"></span> Editer ma participation</a>
+                <img data-src="/js/holder.js/250x250" class="block-col">
+                <img data-src="/js/holder.js/250x200"  class="block-col">
+
+                <img class="map-detail block-col" alt="photoLabel" src="http://maps.google.com/maps/api/staticmap?markers=size:normal|color:0x990066|33.0160999,9.1013498&amp;zoom=3&amp;maptype=terrain&amp;sensor=false&amp;size=250x200">
             </div>
         </div>
     </div>

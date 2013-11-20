@@ -133,56 +133,56 @@ background: url("../img/page-banner.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 // Jumbotron
 // -------------------------
 
-
-.container .jumbotron {
-    padding: 20px 20px 20px 20px;
-    margin: 0 0 10px 0;
-    font-size: 125%;
-}
-.container .jumbotron ul{
-    background: none repeat scroll 0 0 #FFFFFF;
-        font-size: 100%;
-        line-height: 20px;
-        list-style-type: none;
-        margin: 0 0 10px;
-        padding: 10px 12px;
-        text-align: left;
-    border-radius: @border-radius-base;
-}
+//
+//.container .jumbotron {
+//    padding: 20px 20px 20px 20px;
+//    margin: 0 0 10px 0;
+//    font-size: 125%;
+//}
+//.container .jumbotron ul{
+//    background: none repeat scroll 0 0 #FFFFFF;
+//        font-size: 100%;
+//        line-height: 20px;
+//        list-style-type: none;
+//        margin: 0 0 10px;
+//        padding: 10px 12px;
+//        text-align: left;
+//    border-radius: @border-radius-base;
+//}
 //.container .jumbotron ul.prize{
 //    background: none repeat scroll 0 0 #998B84;
 //    color: #fff;
 //}
-.container .jumbotron ul li{
-    margin: 0;
-    padding: 0;
-    font-size: 80%;
-}
-.container .jumbotron ul li p{
-    margin: 0;
-    padding: 0;
-    font-size: 110%;
-}
-
-.prize_amount{
-    color:@brand-primary;
-    font-size: 175%;
-    margin: 0 0 10px 0;
-    font-weight: bold;
-}
-
-.btn-lg {
-    font-size: 100%;
-    font-weight: bold;
-    margin: 10px 0;
-}
-.container .jumbotron .input-group {
-    font-size: 70%;
-    font-family: arial;
-    padding: 6px 0;
-    color: @gray;
-    line-height: 15px;
-}
+//.container .jumbotron ul li{
+//    margin: 0;
+//    padding: 0;
+//    font-size: 80%;
+//}
+//.container .jumbotron ul li p{
+//    margin: 0;
+//    padding: 0;
+//    font-size: 110%;
+//}
+//
+//.prize_amount{
+//    color:@brand-primary;
+//    font-size: 175%;
+//    margin: 0 0 10px 0;
+//    font-weight: bold;
+//}
+//
+//.btn-lg {
+//    font-size: 100%;
+//    font-weight: bold;
+//    margin: 10px 0;
+//}
+//.container .jumbotron .input-group {
+//    font-size: 70%;
+//    font-family: arial;
+//    padding: 6px 0;
+//    color: @gray;
+//    line-height: 15px;
+//}
 
 
 
@@ -204,7 +204,6 @@ background: url("../img/page-banner.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   margin-bottom: 12px;
 }
 .col-md-12 {
-    width: 50%;
     margin-bottom: 15px;
 }
 
@@ -223,9 +222,6 @@ background: url("../img/page-banner.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   margin: 0;
 }
 
-.photo-detail {
-  width: 520px;
-}
 
 .btn-participation-col {
   width: 100%;
@@ -272,11 +268,17 @@ background: url("../img/page-banner.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 
 
 
-.item {
+.item,
+item-large{
     position: relative;
-
 }
-
+.item img,
+item-large img{
+    display: block;
+    height: auto;
+    max-width: 100%;
+    min-width: 100%;
+}
 
 .item .item-infos {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
@@ -292,33 +294,37 @@ background: url("../img/page-banner.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     display: block;
 }
 .item .item-infos span {
-    color: #FFFFFF;
+    color: #fff;
     display: block;
 }
-.item-infos span.item-infos-title, .item-infos span.item-date {
-    color: #FFFFFF;
-    float: left;
+
+.item-infos .item-infos-title {
+    color: #fff;
+    background: url("../img/jlv_ico.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
+    font-size: 15px;
+    margin: 0;
+    padding: 5px 0 0 35px;
+    width: 100%;
+}
+.item-infos .item-date {
+    display: block;
+    color: @gray-lighter;
     font-size: 11px;
     height: 25px;
     margin: 0;
     padding: 5px 0 0 5px;
-    width: 235px;
-}
-.item-infos span.item-infos-title {
-    background: url("../img/jlv_ico.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
-    font-size: 15px;
-    padding: 5px 0 0 35px;
-    width: 235px;
+    width: 100%;
 }
 
-.item-infos span.item-infos-count {
-    float: right;
-    margin: 0;
+.item-infos .item-infos-count {
+    bottom: 10px;
+        margin: 0;
+        position: absolute;
+        right: 0;
 }
 
-.item-infos span.item-infos-count span.count-votes {
-    color: #FFFFFF;
-    float: left;
+.item-infos .item-infos-count .count-votes {
+    color: #fff;
     font-family: Arial;
     font-size: 12px;
     font-weight: bold;
@@ -327,26 +333,98 @@ background: url("../img/page-banner.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     padding: 5px 0 0;
     text-align: center;
     width: 30px;
-}
-.item-infos span.item-infos-count span.count-votes {
     font-size: 11px;
     letter-spacing: -0.05em;
-}
-
-.item-infos span.item-infos-count span.count-votes {
     background: url("../img/jlv_ico_vote.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     color: #990066;
     float: right;
     margin: 0 10px 0 0;
 }
-span.item-infosData {
-    float: left;
-    margin: 10px 5px;
-    width: 300px;
+
+
+
+
+.item-large .item-infos {
+    position: relative;
+    background: #333;
+    display: block;
+    padding: 20px 20px 30px 20px;
+    margin: 10px 0;
+    height: auto;
+
+    .item-infos-title {
+        background: url("../img/jlv_icoBig.png") no-repeat scroll 0 8px rgba(0, 0, 0, 0);
+        color: #FFFFFF;
+        display: block;
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: bold;
+        height: auto;
+        margin: 0 0 0 5px;
+        padding: 5px 0 0 65px;
+        width: 90%;
+    }
+    img {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .item-infos-desc {
+        color: #EEEEEE;
+        display: block;
+        font-size: 18px;
+        font-style: normal;
+        line-height: 25px;
+        margin: 10px 10px 30px 10px;
+        padding: 0;
+    }
+    .item-infos-count {
+        top: 30px;
+           margin: 0;
+           position: absolute;
+           right: 20px;
+       }
+    .item-infos-count .count-votes {
+        background: url("../img/jlv_icoBig_vote.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+        font-size: 15px;
+        height: 35px;
+        padding: 6px 0 0;
+        width: 38px;
+    }
 }
 
-.bs-docs-grid {
-  .col-md-12 {
-    background: #CCC;
-  }
+#vote-button {
+    bottom: 20px;
+               margin: 0;
+               position: absolute;
+               right: 20px;
+        .btn-jlv {
+            font-size:22px;
+            color:#fff;
+            background-color: @brand-secondary;
+            border-color: #444;
+            color: #fff;
+        }
+        .btn-jlv:hover {
+            background-color: @brand-primary;
+            border-color: #444;
+        }
+        .glyphicon {
+        top: 5px;
+    }
+}
+
+
+.item-large .item-user {
+    position: relative;
+    background: #fff;
+    display: block;
+    padding: 20px 20px 30px 20px;
+    margin: 10px 0;
+    height: auto;
+}
+
+.social-buttons {
+
+
 }

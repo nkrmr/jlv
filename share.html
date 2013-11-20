@@ -45,12 +45,52 @@
     <br>
 
         <div class="bs-docs-grid">
+            <nav class="navbar navbar-default navbar-inverse" role="navigation">
+                               <!-- Brand and toggle get grouped for better mobile display -->
+                               <div class="navbar-header">
+                                   <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                           data-target="#bs-example-navbar-collapse-1">
+                                       <span class="sr-only">Toggle navigation</span>
+                                       <span class="icon-bar"></span>
+                                       <span class="icon-bar"></span>
+                                       <span class="icon-bar"></span>
+                                   </button>
+                               </div>
+
+                               <!-- Collect the nav links, forms, and other content for toggling -->
+                               <div class="collapse navbar-collapse" id="">
+                                   <ul class="nav navbar-nav">
+                                       <li><a href="/"><span class="glyphicon glyphicon-home"> </span></a></li>
+                                       <li class="divider-vertical"></li>
+                                       <li><a href="/list.html"><span class="glyphicon glyphicon-heart"> </span> Coup de coeur</a></li>
+                                       <li><a href="/list.html"><span class="glyphicon glyphicon-th-large"> </span> Les plus récentes</a></li>
+                                       <li><a href="/list.html"><span class="glyphicon glyphicon-thumbs-up"> </span> Les plus votées</a></li>
+                                       <li><a href="/map.html"><span class="glyphicon glyphicon-map-marker"> </span> Carte</Ca></a></li>
+                                   </ul>
+
+                                   <ul class="nav navbar-nav navbar-right">
+                                       <li class="divider-vertical"></li>
+                                         <li class="dropdown">
+                                           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-info-sign"></span> Le concours <b class="caret"></b></a>
+                                           <ul class="dropdown-menu">
+                                               <li class="active"><a href="/rules.html"><span class="glyphicon glyphicon-list"></span> Réglement</a></li>
+                                               <li class="divider"></li>
+                                               <li><a href="/jury.html"><span class="glyphicon glyphicon-user"></span> Jury</a></li>
+                                               <li class="divider"></li>
+                                               <li><a href="/prize.html"><span class="glyphicon glyphicon-gift"></span> Prix</a></li>
+                                           </ul>
+                                         </li>
+                                       </ul>
+                               </div>
+                               <!-- /.navbar-collapse -->
+                           </nav>
         <div class="row show-grid">
             <div class="col-md-16">
-                <h3>Merci pour votre participation! Bonne chance!</h3>
 
-                <h4>Partager votre photo pour obtenir un maximum de votes</h4>
-
+                <div class="page-header">
+                    <h3>Merci pour votre participation! Bonne chance!</h3>
+                    <h4>Partager votre photo pour obtenir un maximum de votes</h4>
+                </div>
 
                 <div class="col-md-24">
                     <a href="/photo.html">
@@ -59,22 +99,19 @@
                         </div>
                         <div class="col-md-12">
                             <div class="item-infos">
-                                <span class="item-infos-title">être proche du sublime.</span>
-                                <span class="item-date">Ajouté le 25/03/2013 par Kévin Galop</span>
-                                <span class="item-infos-count">
-                                     <span class="count-votes">16</span>
-                                </span>
+                                <strong>J'aime être proche du sublime.</strong>
+                                <p>NY jusque LA dans un van. C'est la fin de notre aventure, nous voila sur la côte Ouest, à Salvation mountain les étoiles dansent pour nous.</p>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
             <div class="col-md-8 pull-right">
-                <img data-src="/js/holder.js/260x200" class="block-col">
-                <img data-src="/js/holder.js/260x200">
+                <img data-src="/js/holder.js/250x250" class="block-col">
+                <img data-src="/js/holder.js/250x200" class="block-col">
             </div>
             <div class="col-md-16">
-                <div class="col-md-24">
+                <div class="col-md-12">
                     <div class="col-md-12">
                         <input type="checkbox">
                         Facebook
@@ -87,13 +124,13 @@
                     </div>
                 </div>
                 <div class="col-md-24">
-                    <a href="participation.html" class="btn btn-primary pull-right btn-participation-col">
-                        Partager
+                    <a href="participation.html" class="btn btn-lg btn-primary pull-right btn-participation-col">
+                        <span class="glyphicon glyphicon-share"></span>&nbsp; Partager
                     </a>
                 </div>
                 <div class="col-md-24">
-                    <a href="photo.html" class="btn btn-primary pull-right btn-participation-col">
-                        Voir ma photo
+                    <a href="photo.html" class="btn btn-lg btn-primary pull-right btn-participation-col">
+                        <span class="glyphicon glyphicon-picture"></span>&nbsp; Voir ma photo
                     </a>
                 </div>
             </div>
