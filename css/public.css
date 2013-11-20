@@ -6634,6 +6634,7 @@ img {
 }
 .navbar-collapse {
   padding: 0;
+  font-size: 15px;
 }
 .accor-navbar {
   background-color: #0f2f7e;
