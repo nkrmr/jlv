@@ -6715,20 +6715,41 @@ footer .navbar-accor a {
   }
 }
 .home-banner {
-  width: 456px;
-  height: 452px;
+  width: 810px;
+  height: 350px;
   background: url("../img/home-banner.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
+.slide1,
+.slide2,
+.slide3,
+.slide4,
+.slide5 {
+  display: block;
+  background: #eee;
+  width: 790px;
+  height: 350px;
+}
 .page-banner {
-  width: 810px;
-  height: 300px;
+  position: relative;
+}
+.page-banner > a {
+  display: block;
+  width: 790px;
+  height: 210px;
   background: url("../img/page-banner.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 .button-participate {
   z-index: 2;
   position: absolute;
   right: 30px;
-  bottom: 0px;
+  bottom: 20px;
+}
+.page-banner .button-participate {
+  bottom: 20px;
+  right: 40px;
+}
+.page-banner .button-participate .btn {
+  font-weight: bold;
 }
 .show-grid {
   margin-bottom: 12px;
@@ -6751,6 +6772,9 @@ footer .navbar-accor a {
 .btn-participation-col {
   width: 100%;
   margin-bottom: 10px;
+}
+.pager {
+  margin: 0 0 20px 0;
 }
 .block-col {
   margin-bottom: 10px;
@@ -6898,6 +6922,26 @@ item-large img {
   padding: 20px 20px 30px 20px;
   margin: 10px 0;
   height: auto;
+}
+.item-large .social-share {
+  position: relative;
+  background: #eee;
+  display: block;
+  padding: 10px 20px 10px 20px;
+  margin: 10px 0;
+  height: auto;
+}
+.item-large .social-share .fb-share-button {
+  float: left;
+  margin: 5px 0 10px 20px;
+}
+.item-large .social-share .twitter-share-button {
+  float: left;
+  margin: 5px 0 0 50px;
+}
+.item-large .social-share #___plusone_0 {
+  float: left;
+  padding: 2px 0 0 20px!important;
 }
 /*
  * Social Buttons for Bootstrap

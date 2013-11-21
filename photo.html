@@ -94,10 +94,14 @@
                    </div>
                    <!-- /.navbar-collapse -->
                </nav>
-        <ul class="pager">
+        <ul class="pager col-md-16">
               <li class="previous"><a href="#">&larr; Photo précédente</a></li>
               <li class="next"><a href="#">Photo suivante &rarr;</a></li>
         </ul>
+
+        <div class="col-md-8">
+                <a href="participation.html" class="btn btn-primary pull-right btn-participation-col"><span class="glyphicon glyphicon-edit"></span> Editer ma participation</a>
+        </div>
         <div class="row show-grid">
             <div class="col-md-16 item-large">
                 <img src="http://static.beglob.com/user/1004376/photo/1004376_514f2d314486a.jpg" class="photo-detail">
@@ -121,12 +125,14 @@
                              <input type="hidden" value="" id="part-id" name="part-id">
                         </div>
                 </div>
-                <div class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
-                <a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a>
+                <div class="social-share">
+                    <div class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+                    <g:plusone></g:plusone>
+                </div>
 
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-                <g:plusone></g:plusone>
                 <div class="item-user block-col">
                     <div class="media">
                       <a class="pull-left" href="#">
@@ -148,7 +154,6 @@
 
             </div>
             <div class="col-md-8">
-                <a href="participation.html" class="btn btn-primary pull-right btn-participation-col"><span class="glyphicon glyphicon-edit"></span> Editer ma participation</a>
                 <img data-src="/js/holder.js/250x250" class="block-col">
                 <img data-src="/js/holder.js/250x200"  class="block-col">
 
