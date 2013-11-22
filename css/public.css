@@ -6717,7 +6717,7 @@ footer .navbar-accor a {
 .home-banner {
   width: 810px;
   height: 350px;
-  background: url("../img/home-banner.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: url("../img/slides/home-banner.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 .slide1,
 .slide2,
@@ -6729,6 +6729,21 @@ footer .navbar-accor a {
   width: 790px;
   height: 350px;
 }
+.slide1 {
+  background: url("../img/slides/slide1.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.slide2 {
+  background: url("../img/slides/slide2.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.slide3 {
+  background: url("../img/slides/slide3.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.slide4 {
+  background: url("../img/slides/slide4.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.slide5 {
+  background: url("../img/slides/slide5.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
 .page-banner {
   position: relative;
 }
@@ -6736,7 +6751,12 @@ footer .navbar-accor a {
   display: block;
   width: 790px;
   height: 210px;
-  background: url("../img/page-banner.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: url("../img/slides/page_banner.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+a.epub {
+  display: block;
+  width: 250px;
+  height: 250px;
 }
 .button-participate {
   z-index: 2;
