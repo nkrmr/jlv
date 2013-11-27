@@ -35,14 +35,17 @@ img {
      width: 238px;
 }
 
-.navbar-accor a{
-    background: url("../img/logo-ah.gif") no-repeat scroll right -11px rgba(0, 0, 0, 0);
-     display: block;
-     height: 44px;
-     margin: 0;
-     padding: 12px 0 0;
-     width: 248px;
-    text-indent: -9999px;
+.navbar-accor {
+    a{
+        background: url("../img/logo-ah.gif") no-repeat scroll 10px -11px rgba(0, 0, 0, 0);
+         display: block;
+         height: 44px;
+         margin: 0;
+         padding: 12px 0 0;
+         width: 258px;
+        text-indent: -9999px;
+
+    }
 }
 footer .navbar-accor a{
     background: url("../img/logo-ah-blue.gif") no-repeat scroll right -11px rgba(0, 0, 0, 0);
@@ -93,9 +96,21 @@ footer .navbar-accor a{
     border-top: 1px solid #E5E5E5;
     color: #777777;
     margin-top: 30px;
-    padding-bottom: 30px;
-    padding-top: 40px;
+    padding-bottom: 0px;
+    padding-top: 10px;
     text-align: center;
+
+    .powered {
+        padding: 10px 0;
+        color: #ddd;
+        a {
+            color: #ddd;
+        }
+        a:hover {
+            color: #990066;
+            text-decoration: none;
+        }
+    }
 }
 .footer-links {
     margin: 10px 0;
@@ -108,6 +123,8 @@ footer .navbar-accor a{
 .footer-links li:first-child {
     padding-left: 0;
 }
+
+
 @media (min-width: 768px) {
 .bs-footer {
     text-align: left;
@@ -121,7 +138,7 @@ footer .navbar-accor a{
 // Banner home & Page
 // -------------------------
 .home-banner {
-    width: 810px;
+    width: 790px;
     height: 350px;
 background: url("../img/slides/home-banner.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
@@ -131,6 +148,7 @@ background: url("../img/slides/home-banner.jpg") no-repeat scroll 0 0 rgba(0, 0,
 .slide3,
 .slide4,
 .slide5,
+.slide6
 {
     display: block;
     background: #eee;
@@ -153,6 +171,10 @@ background: url("../img/slides/home-banner.jpg") no-repeat scroll 0 0 rgba(0, 0,
 .slide5 {
     background: url("../img/slides/slide5.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
+.slide6 {
+    background: url("../img/slides/slide6.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
 
 .page-banner {
     position: relative;
@@ -164,19 +186,49 @@ background: url("../img/slides/home-banner.jpg") no-repeat scroll 0 0 rgba(0, 0,
     background: url("../img/slides/page_banner.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     }
 }
+
+.page-fangate {
+   display:block;
+   width: 790px;
+   height: 400px;
+   background: url("../img/slides/page_fangate.jpg") no-repeat scroll 0 0px rgba(0, 0, 0, 0);
+    .animation-arrow {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        img.arrow{
+        -webkit-animation: 2s ease 4s normal none infinite arrow;
+
+         animation: 1s ease 0s normal none infinite arrow;
+      }
+    @keyframes arrow {
+        50%  {transform: rotate(15deg);}
+        }
+    @-webkit-keyframes arrow {
+        50%  {-webkit-transform: rotate(15deg);}
+        }
+   }
+}
 //epub
 
 
-a.epub {
+
+.epub {
+    a {
     display: block;
     width: 250px;
     height: 250px;
-    img {
-
-            }
-
+    }
 }
 
+.prize-board {
+    a {
+    display: block;
+    width: 250px;
+    height: 200px;
+    background: url("../img/slides/prize-board.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    }
+}
 
 
 // Jumbotron
