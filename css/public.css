@@ -6655,19 +6655,17 @@ img {
   text-indent: -9999px;
 }
 footer .navbar-accor a {
-  background: url("../img/logo-ah-blue.gif") no-repeat scroll right -11px rgba(0, 0, 0, 0);
+  height: 60px;
+  background: url("../img/logo-accor.png") no-repeat scroll 20px 0 rgba(0, 0, 0, 0);
+  width: 278px;
 }
 footer .navbar-accor a.bandyou {
-  background: url("../img/logo-bandyou.png") no-repeat scroll right -11px rgba(0, 0, 0, 0);
-  width: 148px;
+  background: url("../img/logo-bandyou.png") no-repeat scroll 15px 10px rgba(0, 0, 0, 0);
+  width: 128px;
 }
 footer .navbar-accor a.photobox {
-  background: url("../img/logo-photobox.png") no-repeat scroll right -11px rgba(0, 0, 0, 0);
-  width: 148px;
-}
-footer .navbar-accor a {
-  text-indent: 0;
-  padding: 20px;
+  background: url("../img/logo-photobox.png") no-repeat scroll 0 5px rgba(0, 0, 0, 0);
+  width: 178px;
 }
 .navbar-accor span {
   display: block;
