@@ -6849,10 +6849,11 @@ footer .navbar-accor a.photobox {
 .page-header {
   margin: 10px 0 20px;
 }
-.btn-social.btn-lg {
-  font-size: 16px;
+.container .btn-social.btn-lg {
+  font-size: 15px;
   padding-left: 48px;
   padding-right: 5px;
+  text-align: center;
 }
 .item,
 item-large {
