@@ -6778,20 +6778,6 @@ footer .navbar-accor a.photobox {
   top: 0;
   right: 20px;
 }
-.page-fangate .animation-arrow img.arrow {
-  -webkit-animation: 2s ease 4s normal none infinite arrow;
-  animation: 1s ease 0s normal none infinite arrow;
-}
-@keyframes arrow {
-  50% {
-    transform: rotate(15deg);
-  }
-}
-@-webkit-keyframes arrow {
-  50% {
-    -webkit-transform: rotate(15deg);
-  }
-}
 .epub {
   display: block;
   width: 250px;
