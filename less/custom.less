@@ -188,13 +188,14 @@ background: url("../img/slides/home-banner.jpg") no-repeat scroll 0 0 rgba(0, 0,
 .page-banner {
     position: relative;
 
-    > a {
-    display:block;
-    img {
-        width: 100%;
-    }
+      a {
+        display:inline-block;
+        img {
+            width: 100%;
+        }
     }
 }
+
 
 .page-fangate {
     display:block;
@@ -204,23 +205,36 @@ background: url("../img/slides/home-banner.jpg") no-repeat scroll 0 0 rgba(0, 0,
     background: url("../img/slides/page_fangate.jpg") no-repeat scroll 0 0px rgba(0, 0, 0, 0);
     .animation-arrow {
         position: absolute;
-        top: 0;
+        top: 10px;
         right: 20px;
+        animation-name: arrow;
+                    	animation-duration: 1.5s;
+                    	animation-timing-function: ease;
+                    	animation-iteration-count: 999;
+                    	animation-direction: normal;
         img.arrow{
-        -webkit-animation: 2s ease 4s normal none infinite arrow;
 
-         animation: 1s ease 0s normal none infinite arrow;
-      }
-    @keyframes arrow {
-        50%  {transform: rotate(15deg);}
         }
-    @-webkit-keyframes arrow {
-        50%  {-webkit-transform: rotate(15deg);}
-        }
+    }
+}
+@keyframes arrow {
+   0% {
+    top: 10px;
+    right: 20px;
+      animation-timing-function: linear;
+   }
+    25% {
+     top: -10px;
+     right: 20px;
+       animation-timing-function: linear;
+    }
+
+   100% {
+    top: 10px;
+    right: 20px;
+      animation-timing-function: ease;
    }
 }
-//epub
-
 
 
 .epub {

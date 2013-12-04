@@ -6746,10 +6746,10 @@ footer .navbar-accor a.photobox {
 .page-banner {
   position: relative;
 }
-.page-banner > a {
-  display: block;
+.page-banner a {
+  display: inline-block;
 }
-.page-banner > a img {
+.page-banner a img {
   width: 100%;
 }
 .page-fangate {
@@ -6761,21 +6761,29 @@ footer .navbar-accor a.photobox {
 }
 .page-fangate .animation-arrow {
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 20px;
-}
-.page-fangate .animation-arrow img.arrow {
-  -webkit-animation: 2s ease 4s normal none infinite arrow;
-  animation: 1s ease 0s normal none infinite arrow;
+  animation-name: arrow;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: 999;
+  animation-direction: normal;
 }
 @keyframes arrow {
-  50% {
-    transform: rotate(15deg);
+  0% {
+    top: 10px;
+    right: 20px;
+    animation-timing-function: linear;
   }
-}
-@-webkit-keyframes arrow {
-  50% {
-    -webkit-transform: rotate(15deg);
+  25% {
+    top: -10px;
+    right: 20px;
+    animation-timing-function: linear;
+  }
+  100% {
+    top: 10px;
+    right: 20px;
+    animation-timing-function: ease;
   }
 }
 .epub {
