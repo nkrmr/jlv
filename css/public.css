@@ -6637,7 +6637,7 @@ img {
   background-color: #0f2f7e;
 }
 .navbar-header .navbar-brand {
-  background: url("../img/logo-jlv-ah.png") no-repeat scroll 0 -10px rgba(0, 0, 0, 0);
+  background: url("../img/logo-jlv-ah.png") no-repeat scroll 0 4px rgba(0, 0, 0, 0);
   display: block;
   height: 44px;
   margin: 0;
@@ -6645,8 +6645,11 @@ img {
   text-indent: -9999px;
   width: 238px;
 }
+.navbar-accor {
+  text-align: center;
+}
 .navbar-accor a {
-  background: url("../img/logo-ah.gif") no-repeat scroll 10px -11px rgba(0, 0, 0, 0);
+  background: url("../img/logo-ah.png") no-repeat scroll 10px 4px rgba(0, 0, 0, 0);
   display: block;
   height: 44px;
   margin: 0;
@@ -6656,7 +6659,7 @@ img {
 }
 footer .navbar-accor a {
   height: 60px;
-  background: url("../img/logo-accor.png") no-repeat scroll 20px 0 rgba(0, 0, 0, 0);
+  background: url("../img/logo-accor.png") no-repeat scroll 20px 4px rgba(0, 0, 0, 0);
   width: 278px;
 }
 footer .navbar-accor a.bandyou {
@@ -6736,35 +6739,18 @@ footer .navbar-accor a.photobox {
 .slide6 {
   display: block;
   background: #eee;
-  width: 790px;
-  height: 350px;
-}
-.slide1 {
-  background: url("../img/slides/slide1.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-.slide2 {
-  background: url("../img/slides/slide2.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-.slide3 {
-  background: url("../img/slides/slide3.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-.slide4 {
-  background: url("../img/slides/slide4.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-.slide5 {
-  background: url("../img/slides/slide5.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-.slide6 {
-  background: url("../img/slides/slide6.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
 }
 .page-banner {
   position: relative;
 }
 .page-banner > a {
   display: block;
-  width: 790px;
-  height: 210px;
-  background: url("../img/slides/page_banner.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.page-banner > a img {
+  width: 100%;
 }
 .page-fangate {
   display: block;
@@ -6847,7 +6833,7 @@ footer .navbar-accor a.photobox {
   float: left;
   margin: 0;
 }
-.btn-participation-col {
+.btn-participation-col .btn {
   width: 100%;
   margin-bottom: 10px;
 }
@@ -6868,6 +6854,19 @@ footer .navbar-accor a.photobox {
   padding-left: 48px;
   padding-right: 5px;
   text-align: center;
+}
+.media .media-body {
+  padding: 0 10px;
+}
+.media .media-body .media-heading {
+  color: #0f2f7e;
+}
+.media .media-body .value {
+  padding: 5px 10px;
+  margin: 10px 0;
+  color: #0f2f7e;
+  background: #eee;
+  display: inline-block;
 }
 .item,
 item-large {
@@ -6994,12 +6993,12 @@ item-large img {
 #vote-button .btn-jlv {
   font-size: 22px;
   background-color: #990066;
-  border-color: #444;
+  border-color: #333;
   color: #fff;
 }
 #vote-button .btn-jlv:hover {
   background-color: #0f2f7e;
-  border-color: #444;
+  border-color: #333;
 }
 #vote-button .glyphicon {
   top: 5px;
@@ -7022,15 +7021,117 @@ item-large img {
 }
 .item-large .social-share .fb-share-button {
   float: left;
-  margin: 5px 0 10px 20px;
+  margin: 5px 0 10px 10px;
 }
 .item-large .social-share .twitter-share-button {
   float: left;
-  margin: 5px 0 0 50px;
+  margin: 5px 0 0 20px;
 }
 .item-large .social-share #___plusone_0 {
   float: left;
   padding: 2px 0 0 20px!important;
+}
+@media (max-width: 767px) {
+  body {
+    padding-top: 100px;
+    font-size: 13px;
+  }
+  .navbar-accor span {
+    float: none;
+    font-size: 13px;
+    padding: 0;
+  }
+  .navbar-accor a {
+    background-position: center -11px;
+    width: 100%;
+  }
+  .navbar-header .navbar-brand {
+    background-position: center 4px;
+    width: 100%;
+  }
+  .item .item-infos {
+    display: block;
+  }
+  footer .navbar-accor a,
+  footer .navbar-accor a.photobox,
+  footer .navbar-accor a.bandyou {
+    width: 100%;
+    background-position: center 5px;
+  }
+  #vote-button .btn-jlv {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .item-large .item-infos .item-infos-title {
+    background-size: 45px;
+    font-size: 21px;
+    line-height: 40px;
+    margin: 10px 0 0 5px;
+    padding: 2px 0 0 50px;
+  }
+  .item-infos .item-date {
+    width: 50%;
+  }
+  .item-large .social-share {
+    padding: 10px 0;
+  }
+  .item-large .social-share .fb-share-button {
+    margin: 5px 0 10px 10px;
+  }
+  .item-large .social-share .twitter-share-button {
+    width: 80px!important;
+    margin: 5px 0 0 10px;
+  }
+  .item-large .social-share #___plusone_0 {
+    padding: 2px 0 0 0px!important;
+  }
+  .epub,
+  .prize-board {
+    width: 100%;
+    text-align: center;
+  }
+  .epub a,
+  .prize-board a {
+    display: inline-block;
+  }
+  .map-detail {
+    margin: 0 auto;
+    width: auto;
+  }
+  .btn-participation-col {
+    display: table;
+    width: 100%;
+  }
+  .page-banner .button-participate {
+    bottom: -54px;
+    left: 10px;
+  }
+  .media {
+    text-align: center;
+  }
+  .media .pull-left {
+    width: 100%;
+    text-align: center;
+  }
+  .media .pull-left .media-object {
+    display: inline-block;
+  }
+  .media .media-body {
+    padding: 10px;
+  }
+  .media .media-body .media-heading {
+    color: #0f2f7e;
+    padding: 10px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 809px) {
+  
+}
+@media (min-width: 810px) and (max-width: 1199px) {
+  
+}
+@media (min-width: 1200px) {
+  
 }
 /*
  * Social Buttons for Bootstrap
