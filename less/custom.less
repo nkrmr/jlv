@@ -676,8 +676,32 @@ bottom: auto;
         }
     }
 
-
-
+    .navbar {
+        border: none;
+        min-height: 0;
+    }
+    .navbar-toggle{
+        position: absolute;
+        top:0px;
+        right: 0px;
+        background: #444;
+    }
+    #jlv-navbar-collapse{
+        padding:10px 0;
+        background: #fff;
+        border:none;
+        ul {
+            margin: 0;
+            padding: 0;
+            .divider-vertical,
+            .divider{
+            display: none;
+            }
+        }
+    }
+    #jlv-navbar-collapse.in {
+        background: #222222;
+    }
 }
 
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {

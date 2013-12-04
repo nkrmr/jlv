@@ -7131,6 +7131,32 @@ item-large img {
     color: #0f2f7e;
     padding: 10px 0;
   }
+  .navbar {
+    border: none;
+    min-height: 0;
+  }
+  .navbar-toggle {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #444;
+  }
+  #jlv-navbar-collapse {
+    padding: 10px 0;
+    background: #fff;
+    border: none;
+  }
+  #jlv-navbar-collapse ul {
+    margin: 0;
+    padding: 0;
+  }
+  #jlv-navbar-collapse ul .divider-vertical,
+  #jlv-navbar-collapse ul .divider {
+    display: none;
+  }
+  #jlv-navbar-collapse.in {
+    background: #222222;
+  }
 }
 @media (min-width: 768px) and (max-width: 809px) {
   
