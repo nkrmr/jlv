@@ -6944,6 +6944,28 @@ item-large img {
   float: right;
   margin: 0 10px 0 0;
 }
+.item-infos .item-infos-prize {
+  bottom: 9px;
+  margin: 0;
+  position: absolute;
+  right: 40px;
+}
+.item-infos .item-infos-prize .prize-winner {
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  height: 25px;
+  margin: 0 0 0 10px;
+  padding: 5px 0 0;
+  text-align: center;
+  width: 30px;
+  font-size: 11px;
+  letter-spacing: -0.05em;
+  background: url("../img/jlv_ico_classement.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  color: #fff;
+  float: right;
+  margin: 0 10px 0 0;
+}
 .item-large .item-infos {
   position: relative;
   background: #333;
@@ -6992,6 +7014,22 @@ item-large img {
   width: 38px;
   margin: 0;
 }
+.item-large .item-infos .item-infos-prize {
+  top: 70px;
+  margin: 0;
+  position: absolute;
+  right: 20px;
+  bottom: auto;
+}
+.item-large .item-infos .item-infos-prize .prize-winner {
+  background: url("../img/jlv_icoBig_classement.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  font-size: 15px;
+  height: 35px;
+  padding: 6px 0 0;
+  width: 38px;
+  margin: 0;
+  color: #fff;
+}
 #vote-button {
   bottom: 20px;
   margin: 0;
@@ -7038,6 +7076,15 @@ item-large img {
 .item-large .social-share #___plusone_0 {
   float: left;
   padding: 2px 0 0 20px!important;
+}
+.nav-tabs {
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+.nav-tabs li {
+  font-size: 120%;
+  float: none;
+  display: inline-block;
 }
 @media (max-width: 767px) {
   body {
