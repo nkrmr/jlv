@@ -6961,7 +6961,7 @@ item-large img {
   width: 30px;
   font-size: 11px;
   letter-spacing: -0.05em;
-  background: url("../img/jlv_ico_classement.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: url("../img/jlv_ico_rank.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   color: #fff;
   float: right;
   margin: 0 10px 0 0;
@@ -7022,7 +7022,7 @@ item-large img {
   bottom: auto;
 }
 .item-large .item-infos .item-infos-prize .prize-winner {
-  background: url("../img/jlv_icoBig_classement.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: url("../img/jlv_icoBig_rank.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   font-size: 15px;
   height: 35px;
   padding: 6px 0 0;
